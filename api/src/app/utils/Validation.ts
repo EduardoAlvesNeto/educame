@@ -5,8 +5,10 @@ function isValidUUID(uuid: string) {
 }
 
 function isValidCPF(cpf: string) {
-    cpf = cpf.toString();
-    return cpf.length === 14;
+    console.log(cpf);
+    console.log(cpf.length === 11);
+    console.log(cpf.length);
+    return cpf.length === 11;
 }
 
 

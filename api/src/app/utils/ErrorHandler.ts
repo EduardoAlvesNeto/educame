@@ -47,6 +47,7 @@ function errorHandler(err: ErrorRequestHandler, req: Request, res: Response, nex
         return res.status(err.status).json(err.toJSON());
     }
 
+    console.error(err);
     res.status(500).json({
         error: {
             status: 500,
