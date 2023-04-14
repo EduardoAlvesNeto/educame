@@ -10,4 +10,4 @@ app.use(express.json());
 app.use(routes);
 app.use(errorHandler);
 
-app.listen(config.PORT, () => console.log(`Server started at http://localhost:${config.PORT}`));
+app.listen(config.appPort, () => console.log(`Server started at http://localhost:${config.appPort}`));
