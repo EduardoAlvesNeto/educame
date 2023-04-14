@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node dist/app",
-    "dev": "nodemon src/app.js",
-    "build": "sucrase ./src -d ./dist --transforms imports"
+    "dev": "nodemon src/app.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
