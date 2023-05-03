@@ -14,6 +14,17 @@
     <h1>Educa.me - Projeto Fullstack</h1>
 </div>
 
+
+## Índice 📚
+
+- [Índice 📚](#índice-)
+- [Descrição 📝](#descrição-)
+- [Overview 🌎](#overview-)
+- [Pré-requisitos ✅](#pré-requisitos-)
+- [Instalação 🔧](#instalação-)
+- [Licença 📜](#licença-)
+
+---
 ## Descrição 📝
 
 Educa.me é uma plataforma que oferece um ambiente seguro e intuitivo para as escolas, onde possam ter total controle sobre seus dados administrativos e pedagógicos. Com essa plataforma, é possível gerenciar com eficiência as atividades da instituição de ensino, otimizando processos, melhorando a comunicação e garantindo a segurança das informações.
@@ -38,15 +49,6 @@ Você pode acessar os READMEs específicos de cada parte nos links abaixo:
 
 ---
 
-## Índice 📚
-
-- [Descrição 📝](#descrição-)
-- [Overview 🌎](#overview-)
-- [Índice 📚](#índice-)
-- [Pré-requisitos ✅](#pré-requisitos-)
-- [Instalação 🔧](#instalação-)
-- [📜 Licença](#-licença)
-
 ## Pré-requisitos ✅
 
 Para rodar este projeto, você precisa ter instalado:
@@ -66,6 +68,6 @@ Para instalar as dependências do projeto, siga os passos abaixo:
 
 ---
 
-## 📜 Licença
+## Licença 📜
 
 Este projeto está licenciado sob a licença [MIT](https://opensource.org/license/mit/). Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
