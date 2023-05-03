@@ -14,21 +14,55 @@
     <h1>Educa.me - Projeto Fullstack</h1>
 </div>
 
-A plataforma tem como objetivo principal oferecer um ambiente seguro e intuitivo para as escolas, onde possam ter total controle sobre seus dados administrativos e pedagógicos. Com essa plataforma, é possível gerenciar com eficiência as atividades da instituição de ensino, otimizando processos, melhorando a comunicação e garantindo a segurança das informações.
+## Descrição 📝
+
+Educa.me é uma plataforma que oferece um ambiente seguro e intuitivo para as escolas, onde possam ter total controle sobre seus dados administrativos e pedagógicos. Com essa plataforma, é possível gerenciar com eficiência as atividades da instituição de ensino, otimizando processos, melhorando a comunicação e garantindo a segurança das informações.
+
+Este projeto foi criado com o objetivo de aplicar e aprimorar habilidades de desenvolvimento Fullstack. O objetivo é aplicar o conhecimento adquirido em um projeto real, criando uma plataforma eficiente e intuitiva para gestão escolar. Todo o design do site foi criado por mim usando o Figma.
 
 ---
 
-## 📂 Repositórios
+## Overview 🌎
 
-- [API](https://github.com/EduardoAlvesNeto/educame/tree/main/api) - Em desenvolvimento
-- [Web](https://github.com/EduardoAlvesNeto/educame/tree/main/web) - Em breve
-- [Mobile](https://github.com/EduardoAlvesNeto/educame/tree/main/mobile) - Em breve
+Este projeto é composto por três partes principais:
+
+- API: é o backend do projeto, responsável por fornecer os dados e a lógica de negócio para as outras partes. É construída com Node.js, Express e MongoDB.
+- Web: é o frontend web do projeto, responsável por fornecer a interface gráfica para os usuários. É construída com React e Bootstrap.
+- Mobile: é o frontend móvel do projeto, responsável por fornecer a interface gráfica para os usuários em dispositivos móveis. É construída com React Native e Expo.
+
+Você pode acessar os READMEs específicos de cada parte nos links abaixo:
+
+- [API](https://github.com/EduardoAlvesNeto/educame/tree/main/api) 💻
+- [Web](https://github.com/EduardoAlvesNeto/educame/tree/main/web) 🖥
+- [Mobile](https://github.com/EduardoAlvesNeto/educame/tree/main/mobile) 📱
 
 ---
 
-## 📖 Sobre o projeto
+## Índice 📚
 
-*Este projeto foi criado com o objetivo de aplicar e aprimorar habilidades de desenvolvimento Fullstack. O objetivo é aplicar o conhecimento adquirido em um projeto real, criando uma plataforma eficiente e intuitiva para gestão escolar. Todo o design do site foi criado por mim usando o Figma*
+- [Descrição 📝](#descrição-)
+- [Overview 🌎](#overview-)
+- [Índice 📚](#índice-)
+- [Pré-requisitos ✅](#pré-requisitos-)
+- [Instalação 🔧](#instalação-)
+- [📜 Licença](#-licença)
+
+## Pré-requisitos ✅
+
+Para rodar este projeto, você precisa ter instalado:
+
+- Node.js
+- Yarn ou NPM
+- Docker
+
+---
+## Instalação 🔧
+
+Para instalar as dependências do projeto, siga os passos abaixo:
+
+1. Clone este repositório em sua máquina local.
+2. Navegue até a pasta `api` e execute o comando `yarn install` ou `npm install`.
+3. Repita o passo 2 para as pastas `web` e `mobile`.
 
 ---
 
