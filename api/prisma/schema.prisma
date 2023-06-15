@@ -10,24 +10,61 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id          String        @id @default(uuid()) @db.Uuid
+  name        String        @db.VarChar()
+  email       String        @unique
+  password    String
+  document    String        @unique
+  role        Role
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  Institution Institution[]
+  Teacher     Teacher[]
+  Student     Student[]
+
+  @@map("users")
+}
+
 model Institution {
-  id String @db.Uuid @id @default(uuid())
-  name String @db.VarChar()
-  cnpj String @unique
-  createAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id        String    @id @default(uuid()) @db.Uuid
+  user      User      @relation(fields: [user_id], references: [id])
+  user_id   String    @db.Uuid
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  Teacher   Teacher[]
+  Student   Student[]
 
   @@map("institutions")
 }
 
-model User{
-  id String @db.Uuid @id @default(uuid())
-  name String @db.VarChar()
-  email String @unique
-  password String
-  cpf String @unique
-  createAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+model Teacher {
+  id            String       @id @default(uuid()) @db.Uuid
+  user          User         @relation(fields: [user_id], references: [id])
+  user_id       String       @db.Uuid
+  institution   Institution? @relation(fields: [intitution_id], references: [id])
+  intitution_id String?      @db.Uuid
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
 
-  @@map("users")
+  @@map("teachers")
+}
+
+model Student {
+  id             String       @id @default(uuid()) @db.Uuid
+  user           User         @relation(fields: [user_id], references: [id])
+  user_id        String       @db.Uuid
+  institution    Institution? @relation(fields: [institution_id], references: [id])
+  institution_id String?      @db.Uuid
+  enrollment     String       @unique
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@map("students")
+}
+
+enum Role {
+  STUDENT
+  TEACHER
+  INSTITUTION
 }
